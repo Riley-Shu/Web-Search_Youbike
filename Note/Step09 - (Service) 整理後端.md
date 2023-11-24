@@ -56,7 +56,7 @@ public IActionResult youbikeQry([FromRouteAttribute(Name = "sarea")] String sare
 
 - 比較: 
 	- 原本: 沒有LINQ，就算搜尋其他區域也會出現所有資料
-![[09_1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/09_1_1.png)
 	- 修改: 加入LINQ和Message
-![[09_1_2.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/09_1_2.png)
 ![[09_1_3.png]]
