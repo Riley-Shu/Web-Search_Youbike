@@ -74,9 +74,9 @@ methods:
 ```
 
 - 輸入正確，有搜尋資料
-![[10_1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/10_1_1.png)
 - 輸入錯誤，顯示錯誤訊息
-![[10_1_2.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/10_1_2.png)
 
 # 2 處理問題: 刷新
 ## qryByArea.cshtml
@@ -310,4 +310,4 @@ methods:
 },
 ```
 
-![[10_3_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/10_3_1.png)
