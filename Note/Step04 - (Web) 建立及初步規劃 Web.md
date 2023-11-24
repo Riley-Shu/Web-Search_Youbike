@@ -137,4 +137,4 @@ namespace Sample04_Web.Controllers
 </html>
 
 ```
-![[04_3_2.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/04_3_2.png)
