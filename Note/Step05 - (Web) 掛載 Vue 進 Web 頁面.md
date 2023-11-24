@@ -33,7 +33,7 @@
     app.$mount('#app');
 </script>
 ```
-![[05_2-1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/05_2-1_1.png)
 ## 2-2 (Vue) 加入Data及渲染
 ### qryByArea.cshtml
 - script 加入 Data (參考:[[Vue物件-Data]])
@@ -97,7 +97,7 @@
     app.$mount('#app');
 </script>
 ```
-![[05_2-3_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/05_2-3_1.png)
 
 # 3 確認連接正確
 ## qryByArea.cshtml
@@ -127,4 +127,4 @@
             },
 ```
 
-![[05_3_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/05_3_1.png)
