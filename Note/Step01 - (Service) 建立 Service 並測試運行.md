@@ -47,5 +47,5 @@ namespace Sample04_Service.Controllers
 }
 ```
 ## 2-3 Swagger、Postman測試
-![[01_2-3_1.png]]
-![[01_2-3_2.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/01_2-3_1.png)
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/01_2-3_2.png)
