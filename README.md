@@ -6,4 +6,6 @@
 <a href="https://youtu.be/KVImTvY-4Rg
 " target="_blank">
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/"YOUR_VIDEO_ID"/0.jpg)](https://youtu.be/KVImTvY-4Rg?feature=shared")
+[![IMAGE ALT TEXT]((https://i9.ytimg.com/vi_webp/KVImTvY-4Rg/mq1.webp?sqp=CJS0g6sG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACmgWKAgwIABABGFYgXihlMA8=&rs=AOn4CLD3JPv_7rgcEpAjoA98U0D9BrBnpw)https://i9.ytimg.com/vi_webp/KVImTvY-4Rg/mq1.webp?sqp=CJS0g6sG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACmgWKAgwIABABGFYgXihlMA8=&rs=AOn4CLD3JPv_7rgcEpAjoA98U0D9BrBnpw)](https://youtu.be/KVImTvY-4Rg?feature=shared")
+
+
