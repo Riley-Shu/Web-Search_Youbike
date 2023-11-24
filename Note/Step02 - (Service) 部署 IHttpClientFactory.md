@@ -40,9 +40,9 @@ builder.Services.AddHttpClient();
 # 2 測試IActionResult
 ## 2-1 加入Model類別: YoubikeData
 - 從 [YouBike臺北市公共自行車即時資訊介接網址](https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json) 複製JSON格式
-![[02_2-1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/02_2-1_1.png)
 - 選擇性貼上 JSON作為類別
-![[02_2-1_2.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/02_2-1_2.png)
 ### YoubikeData.cs (Service)
 ```cs
 namespace Sample04_Service.Models
@@ -116,5 +116,5 @@ namespace Sample04_Service.Controllers
 
 ```
 
-![[02_2-1_3.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/02_2-1_3.png)
 
