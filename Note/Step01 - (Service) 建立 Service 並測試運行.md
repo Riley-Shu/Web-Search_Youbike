@@ -1,5 +1,5 @@
 # 1 建立專案: ASP.NET Core Web API
-![[01_1_1.png]]
+![image](01_1_1.png)
 ![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/01_1_1.png)
 # 2 加入API控制器
 1. 加入API控制器
