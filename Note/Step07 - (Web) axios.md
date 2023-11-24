@@ -9,7 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
 方法二: download axios.js + 加入語法
-![[07_1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/07_1_1.png)
 ```cs
 <script src="~/js/axios.js"></script>
 <script src="~/js/axios.min.js"></script>
