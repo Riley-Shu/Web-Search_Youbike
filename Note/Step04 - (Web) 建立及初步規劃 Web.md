@@ -1,7 +1,7 @@
 # 1 建立專案: ASP.NET Core Web 應用程式 (MVC)
-![[04_1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/04_1_1.png)
 # 2 加入MVC控制器
-![[04_2_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/04_2_1.png)
 ## YoubikeController.cs (Web)
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +19,7 @@ namespace Sample04_Web.Controllers
 ```
 
 # 3 新增Razor檢視
-![[04_3_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/04_3_1.png)
 ## qryByArea.cshtml
 ```cs
 @{
