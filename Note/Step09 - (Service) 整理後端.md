@@ -59,4 +59,4 @@ public IActionResult youbikeQry([FromRouteAttribute(Name = "sarea")] String sare
 ![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/09_1_1.png)
 	- 修改: 加入LINQ和Message
 ![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/09_1_2.png)
-![[09_1_3.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/09_1_3.png)
