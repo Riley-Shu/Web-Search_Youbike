@@ -1,5 +1,4 @@
 # 1 建立專案: ASP.NET Core Web API
-![image](01_1_1.png)
 ![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/01_1_1.png)
 # 2 加入API控制器
 1. 加入API控制器
@@ -7,7 +6,7 @@
 3. Swagger、Postman測試
 ## 2-1 加入API控制器
 - 加入 > 控制器 > API控制器
-![[01_2-1_1.png]]
+![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/01_2-1_1.png)
 ## 2-2 設定路徑
 ### YoubikeController.cs (Service)
 - 初始
