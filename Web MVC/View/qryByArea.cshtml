@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "YouBike臺北市公共自行車即時資訊";
+    String url = ViewData["youbikeServiceUrl"] as String;
+    String[] TaipeiList = ViewData["TaipeiList"] as String[];
+    // List<String>? sareaList = (List<String>?) this.ViewBag.sareaList;
+    // String[] sareaList = ViewBag.sareaList;
+    //說明: 考慮到行政區變動機會少，不使用 List<String>,ViewBag，而是使用String[],ViewData
+}
+
+<script>
+    //建立全域變數
+    var youbikeService = '@Html.Raw(url)';
+    // foreach (String i in TaipeiList)
+    // {
+    //    Console.WriteLine(i);
+    // }
+</script>
+
+<h2>YouBike臺北市公共自行車即時資訊查詢</h2>
+<fieldset id="app">
+    <div> @* 選單欄位 *@
+        <lable>行政區域</lable>
+        @*
+        input type="text" v-model:value="sarea"/> 
+        說明: 考慮到使用者自行輸入，操作較為不方便，後來改為select 
+        *@
+        <select v-model:value="sarea">
+            @foreach (var i in TaipeiList)
+            {
+                <option value="@i" selected>@i</option>
+            }
+        </select>
+        <button v-on:click = "qryHandler">查詢</button>
+    </div>
+    <fieldset v-show="isShowT">  @* 搜尋結果欄位 *@
+        <div>搜尋結果: 共{{result.length}}筆紀錄</div>
+        <div>
+            <table class="table table-primary table-borderless">
+            <thead>
+                <tr>
+                    <td>區域</td>
+                    <td>地點</td>
+                    <td>空車數</td>
+                    <td>空車位數</td>
+                    <td>更新時間</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in result">
+                    <td>{{item.sarea}}</td>
+                    <td>{{item.ar}}</td>
+                    <td>{{item.sbi}}</td>
+                    <td>{{item.bemp}}</td>
+                    <td>{{item.srcUpdateTime}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </fieldset>
+    <fieldset v-show="isShowN">  @* 錯誤訊息欄位 *@
+        <div style="background-color:lightpink;">
+            <h3>{{message}}</h3>
+        </div>
+    </fieldset>
+
+<script>
+    //建立vue object
+    var app = new Vue
+    (
+        {
+            //建立 Data object
+            data: 
+            {
+                sarea:"大安區",
+                youbikeAPI: "",
+                //youbikeAPI: youbikeService,
+                //說明: 直接指派容易發生錯誤，使用mounted指派，使其能夠自動更新
+                result: [],
+                message:'',
+                isShowT:false,
+                isShowN: false
+            },
+            //建立 Methods object
+            methods:
+            {
+                qryHandler: function (e) 
+                {
+                    //Part1 重置資料
+                    app.result = [];
+                    app.message = "";
+                    app.isShowT = false;
+                    app.isShowN = false;
+
+                    //Part2 取得完整URL
+                    console.log('qryHandler');
+                    // console.log(this.sarea);
+                    // console.log(this.youbikeAPI);
+                    let reURL = app.youbikeAPI.replace('{0}', this.sarea);
+                    // console.log(reURL);
+
+                    //Part3 利用axios進行HTTP GET請求
+                    axios.get(reURL)
+                        .then(
+                            //請求成功，取得調用資料並顯示欄位
+                            (r) => {
+                                console.log(r)
+                                app.result = r.data;
+                                app.isShowT= true;
+                            }
+                        )
+                        .catch
+                        (
+                            //請求失敗，顯示訊息欄位
+                            (r) => {
+                                console.log(r);
+                                if (r.response.data == "") 
+                                {
+                                    app.message = "提醒: 請選擇欲查詢之行政區域";
+
+                                }
+                                else 
+                                {
+                                    app.message = r.response.data.message;
+                                }
+                                        app.isShowN = true;
+                            }
+                        );
+                }
+            },
+            // 使用mounted方法初始化代碼
+            mounted: function () {
+               //將 全域變數 (youbikeService) 指派給 Vue Data Model (youbikeAPI)
+                this.youbikeAPI = youbikeService;
+            }
+        }
+    );
+    //掛載Vue
+    app.$mount('#app');
+</script>
