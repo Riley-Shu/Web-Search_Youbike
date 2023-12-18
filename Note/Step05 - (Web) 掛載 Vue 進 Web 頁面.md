@@ -2,7 +2,6 @@
 - 下載Vue-min.js，並放入js資料夾中 [Installation — Vue.js (vuejs.org)](https://v2.vuejs.org/v2/guide/installation)
 	- `Vue.js`是一個JavaScript框架，它是一個以視圖層為基礎發展的漸進式框架。在Vue.js中，`Vue`是一個JavaScript對象，它是Vue.js應用程序的實例。您可以使用`Vue`對象來創建和管理Vue.js應用程序的各個方面，例如數據、方法、生命週期鉤子等。因此，您可以將`Vue`視為Vue.js應用程序的核心對象，它是Vue.js應用程序的入口點。[1](https://book.vue.tw/CH1/1-1-introduction.html)[2](https://book.vue.tw/CH1/1-2-instance.html)
 
-希望這可以幫助您更好地了解Vue.js！
 - 套用進Layout.cshtml 
 ## layout.cshtml
 - 公版套用Vue (放在head)
