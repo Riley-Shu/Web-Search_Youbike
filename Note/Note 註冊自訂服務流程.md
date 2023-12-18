@@ -2,7 +2,7 @@
 1. 建立自訂物件 (要先建立Model類別)
 2. 建立管理物件
 3. 註冊服務
-   ```cs
+```cs
 builder.Services.AddSingleton(___Model物件___);
 ```
 ## AddSingleton()
