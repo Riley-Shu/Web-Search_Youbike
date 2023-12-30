@@ -95,7 +95,6 @@
     app.$mount('#app');
 </script>
 ```
-![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/05_2-3_1.png)
 
 # 3 確認連接正確
 ## qryByArea.cshtml
