@@ -73,11 +73,6 @@ methods:
 <table class="table table-primary table-borderless">
 ```
 
-- 輸入正確，有搜尋資料
-![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/10_1_1.png)
-- 輸入錯誤，顯示錯誤訊息
-![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/10_1_2.png)
-
 # 2 處理問題: 刷新
 ## qryByArea.cshtml
 - 注意: `:` 和 `=`
