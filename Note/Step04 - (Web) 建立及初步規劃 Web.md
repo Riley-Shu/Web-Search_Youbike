@@ -130,7 +130,7 @@ namespace Sample04_Web.Controllers
     </div>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; Sample created by Reliy  <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+           <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 </body>
