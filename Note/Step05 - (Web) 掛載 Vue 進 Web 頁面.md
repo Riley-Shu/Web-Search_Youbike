@@ -32,7 +32,6 @@
     app.$mount('#app');
 </script>
 ```
-![image](https://github.com/Riley-Shu/WebForSearchingYoubike/blob/master/Note/image/05_2-1_1.png)
 ## 2-2 (Vue) 加入Data及渲染
 ### qryByArea.cshtml
 - script 加入 Data (參考:[[Vue物件-Data]])
